@@ -1,3 +1,17 @@
+## Task 2
+
+### Created manually AWS resources:
+
+ - [S3 Bucket](http://rs-task-2-manual.s3-website-eu-west-1.amazonaws.com) - 403 is expected
+ - [CloudFront Distribution](https://d374l4d6g9ikqs.cloudfront.net) - My Store web interface is expected
+
+### Created with automation AWS resources:
+
+- [S3 Bucket](http://rs-task-2-auto.s3-website-eu-west-1.amazonaws.com) - 403 is expected
+- [CloudFront Distribution](https://d1xry38tlgxm7d.cloudfront.net) - My Store web interface is expected
+
+## Standard CRA Readme.md content
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
