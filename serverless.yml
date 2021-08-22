@@ -1,12 +1,12 @@
-service: node-in-aws-web
+service: rs-node-in-aws
 
 frameworkVersion: '2'
 
 provider:
   name: aws
   runtime: nodejs12.x
-  # setup profile for AWS CLI.
-  # profile: node-aws
+  profile: default
+  region: eu-west-1
 
 plugins:
   - serverless-finch
@@ -17,11 +17,12 @@ plugins:
 
 custom:
   client:
-    bucketName: node-in-aws-web-bucket
+    bucketName: rs-task-2-auto
     distributionFolder: build
-  s3BucketName: ${self:custom.client.bucketName}
+    indexDocument: index.html
 
   ## Serverless-single-page-app-plugin configuration:
+  s3BucketName: ${self:custom.client.bucketName}
   s3LocalPath: ${self:custom.client.distributionFolder}/
 
 resources:
