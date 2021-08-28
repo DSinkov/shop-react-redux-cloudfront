@@ -46,7 +46,7 @@ export default function Header() {
     <AppBar position="relative">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          <Link className={classes.homeLink} to="/">My Store! (test cache invalidation script)</Link>
+          <Link className={classes.homeLink} to="/">Lego Store!</Link>
         </Typography>
 
         {auth && (
