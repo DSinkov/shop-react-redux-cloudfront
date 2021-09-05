@@ -6,11 +6,12 @@ export type Product = {
   price: number,
   img: string
   description?: string,
-  localPrices?: Record<string, number>[]
 };
 
 export const ProductSchema = Yup.object().shape({
   title: Yup.string().required(),
   description: Yup.string(),
+  img: Yup.string().url(),
+  count: Yup.number(),
   price: Yup.number().required(),
 });
